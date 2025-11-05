@@ -5,7 +5,7 @@ body {
   justify-content: stretch;
   min-height: 95vh;
   background-color: #e4e9fd;
-  background-image: -webkit-linear-gradient( #e4e9fd 50%);
+  background-image: -webkit-linear-gradient( #ffffff 50%);
   font-family: "helvetica neue";
 }
 main {
@@ -15,28 +15,29 @@ main {
 h1 {
   color: #fff;
   padding: 10px;
+  font-family: cursive;
 }
 
 .box {
   max-width: 500px;
   margin: 50px auto;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 1);
 }
 .box1 {
   max-width: 500px;
   margin: 50px auto;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 0 0 black;
-  transition: all 0.4s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .box1:hover {
   transform: translateY(-4px) translateX(-2px);
-  box-shadow: 4px 5px 0 0 black;
+  box-shadow: 4px 5px 0 0 rgb(0, 0, 0);
 }
 
 .box1:active {
@@ -45,7 +46,7 @@ h1 {
 }
 
 #heading {
-  background-color: #8052cf;
+  background-color: #3b3b3b;
   text-align: center;
 }
 form.edit {
@@ -53,10 +54,10 @@ form.edit {
 }
 
 .item {
-  min-height: 90px;
+  min-height: 80px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 3px solid #f1f1f1;
   padding: 0 15px;
 }
 
@@ -75,15 +76,20 @@ input[type="checkbox"] {
 p {
   margin: 0;
   padding: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: #00204a;
   flex-grow: 1;
+  font-family:  cursive;
+  font-weight: 500;
+  line-height: 1;
 }
 
-form {
-  text-align: center;
-  margin-left: 20px;
-  padding-bottom: 80px;
+form.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 5px;
+  margin: 0;
 }
 
 button.add {
@@ -91,10 +97,15 @@ button.add {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #8052cf;
+  background-color: #3b3b3b;
   color: #fff;
   font-size: 30px;
   border-width: 0;
+}
+
+button.add:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 button.edit, button.delete {
@@ -141,24 +152,27 @@ button.delete:hover img.icon {
 
 input[type="text"] {
   text-align: left;
-  height: 60px;
-  top: 10px;
+  height: 50px;
   border: none;
   background: transparent;
-  font-size: 20px;
-  font-weight: 200;
-  width: 80%;
+  font-size: 22px;
+  font-weight: 500;
+  width: calc(100% - 70px);
+  transition: all 0.3s ease;
+  font-family: cursive;
+  margin-right: 10px;
 }
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #8052cf;
+  box-shadow: inset 0 -3px 0 0 #3b3b3b;
 }
 
 ::placeholder {
   color: lightgray;
   opacity: 1;
 }
+
 /* From Uiverse.io by ArnavK-09 */ 
 .container {
   width: 100%;
