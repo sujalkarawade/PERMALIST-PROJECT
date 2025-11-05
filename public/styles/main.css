@@ -24,6 +24,25 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 0.2);
 }
+.box1 {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0 black;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.box1:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 4px 5px 0 0 black;
+}
+
+.box1:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
 
 #heading {
   background-color: #8052cf;
