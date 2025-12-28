@@ -3,7 +3,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  min-height: 95vh;
   background-color: #e4e9fd;
   background-image: -webkit-linear-gradient( #ffffff 50%);
   font-family: "helvetica neue";
@@ -182,6 +181,8 @@ input[type="text"]:focus {
     black,
     1px,
     white 1px,
+    transparent 1px,
+    transparent 30px
     white
   );
   background-size: 100% 30px;
